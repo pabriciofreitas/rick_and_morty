@@ -1,0 +1,21 @@
+import 'package:flutter/cupertino.dart';
+import 'package:rick_and_morty/core/app_color.dart';
+
+class TitleWidget extends StatelessWidget {
+  const TitleWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: AppColor.white,
+      height: 300,
+      child: Center(
+        child: const Text(
+          'Rick and Morty',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 96, fontWeight: FontWeight.w900),
+        ),
+      ),
+    );
+  }
+}
