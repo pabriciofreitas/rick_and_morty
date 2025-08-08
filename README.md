@@ -38,7 +38,7 @@ lib/<br>
 │   │   └── app_print.dart<br>
 │   │<br>
 │   ├── home/<br>
-│   │   └── widgets/<br>
+│   │   └── widgets/persona_list_widget.dart<br>
 │   │       └── home_screen.dart<br>
 │   │<br>
 │   ├── persona_details/<br>
