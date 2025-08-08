@@ -8,12 +8,11 @@ class TitleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColor.white,
-      height: 300,
       child: Center(
         child: const Text(
           'Rick and Morty',
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 96, fontWeight: FontWeight.w900),
+          style: TextStyle(fontSize: 80, fontWeight: FontWeight.w900),
         ),
       ),
     );

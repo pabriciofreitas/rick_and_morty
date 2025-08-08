@@ -6,10 +6,16 @@ import 'package:rick_and_morty/data/model/persona_model.dart';
 
 class PersonaWidget extends StatelessWidget {
   final PersonaModel persona;
-  const PersonaWidget({super.key, required this.persona});
+  final bool showDetails;
+  const PersonaWidget({
+    super.key,
+    required this.persona,
+    this.showDetails = false,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
     return Container(
       margin: const EdgeInsets.all(2),
       decoration: BoxDecoration(
@@ -48,6 +54,34 @@ class PersonaWidget extends StatelessWidget {
               style: const TextStyle(fontSize: 36, color: Colors.white),
             ),
           ),
+          if (showDetails)
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: persona.status.color,
+                    maxRadius: 10,
+                  ),
+                  const SizedBox(width: 8.0),
+                  Container(
+                    constraints: BoxConstraints(
+                      maxWidth: width <= 500 ? width - 80 : 450,
+                    ),
+                    child: Text(
+                      '${persona.status.description} - ${persona.species}',
+                      textAlign: TextAlign.center,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        fontSize: 24,
+                        color: AppColor.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
         ],
       ),
     );

@@ -16,19 +16,20 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: AppColor.white,
-        // appBar: AppBarWidget(),
-        body: SingleChildScrollView(
-          controller: _scrollController,
-          child: Column(
-            children: [
-              AppBarWidget(),
-              TitleWidget(),
-              PersonaListWidget(scrollController: _scrollController),
-              // Container(height: 400, color: AppColor.primaryColor),
-            ],
+    return Container(
+      color: AppColor.white,
+      child: SafeArea(
+        child: Scaffold(
+          backgroundColor: AppColor.white,
+          body: SingleChildScrollView(
+            controller: _scrollController,
+            child: Column(
+              children: [
+                AppBarWidget(),
+                TitleWidget(),
+                PersonaListWidget(scrollController: _scrollController),
+              ],
+            ),
           ),
         ),
       ),

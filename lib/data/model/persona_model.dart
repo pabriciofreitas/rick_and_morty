@@ -1,8 +1,10 @@
+import 'package:rick_and_morty/data/model/personal_status_enum.dart';
+
 class PersonaModel {
   final int id;
   final String name;
   final String species;
-  final String status;
+  final PersonaStatusEnum status;
   final String image;
 
   PersonaModel({
@@ -17,12 +19,12 @@ class PersonaModel {
       id: json['id'] as int,
       name: json['name'] as String,
       species: json['species'] as String,
-      status: json['status'] as String,
+      status: PersonaStatusEnum.fromString(json['status'] as String),
       image: json['image'] as String,
     );
   }
   @override
   String toString() {
-    return 'PersonaModel(name: $name, species: $species, status: $status, image: $image)';
+    return 'PersonaModel(name: $name, species: $species, status: ${status.description}, image: $image)';
   }
 }
