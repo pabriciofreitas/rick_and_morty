@@ -8,7 +8,7 @@ Confira o projeto online em:
 [https://pabriciofreitas.github.io/rick_and_morty/](https://pabriciofreitas.github.io/rick_and_morty/)
 
 
-##Flutter versão:
+## Flutter versão:
 3.32.8
 
 ## Gerencia de estado
