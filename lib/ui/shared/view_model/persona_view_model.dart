@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/data/model/persona_model.dart';
+import 'package:rick_and_morty/domain/model/persona_model.dart';
 import 'package:rick_and_morty/data/repositories/persona_repository.dart';
 
 class PersonaViewModel extends ChangeNotifier {

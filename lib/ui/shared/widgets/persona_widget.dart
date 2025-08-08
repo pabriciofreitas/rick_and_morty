@@ -1,8 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/core/app_color.dart';
+import 'package:rick_and_morty/ui/core/app_color.dart';
 
-import 'package:rick_and_morty/data/model/persona_model.dart';
+import 'package:rick_and_morty/domain/model/persona_model.dart';
 
 class PersonaWidget extends StatelessWidget {
   final PersonaModel persona;

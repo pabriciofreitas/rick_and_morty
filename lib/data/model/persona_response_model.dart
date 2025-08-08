@@ -1,4 +1,4 @@
-import 'package:rick_and_morty/data/model/persona_model.dart';
+import 'package:rick_and_morty/domain/model/persona_model.dart';
 
 class PersonaResponseModel {
   List<PersonaModel> personas;

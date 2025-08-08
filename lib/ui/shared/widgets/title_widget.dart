@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:rick_and_morty/core/app_color.dart';
+import 'package:rick_and_morty/ui/core/app_color.dart';
 
 class TitleWidget extends StatelessWidget {
   const TitleWidget({super.key});

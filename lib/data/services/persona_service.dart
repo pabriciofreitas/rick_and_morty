@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:http/http.dart';
-import 'package:rick_and_morty/data/model/persona_model.dart';
+import 'package:rick_and_morty/domain/model/persona_model.dart';
 import 'package:rick_and_morty/data/model/persona_response_model.dart';
 import 'package:rick_and_morty/data/repositories/persona_repository.dart';
-import 'package:rick_and_morty/infra/api_service.dart';
+import 'package:rick_and_morty/data/services/api_service.dart';
 
 class PersonaService implements IPersonaRepository {
   final ApiService _apiService;

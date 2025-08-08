@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/core/app_color.dart';
+import 'package:rick_and_morty/ui/core/app_color.dart';
 import 'package:rick_and_morty/ui/shared/widgets/app_bar_widget.dart';
 import 'package:rick_and_morty/ui/home/widgets/persona_list_widget.dart';
 import 'package:rick_and_morty/ui/shared/widgets/title_widget.dart';

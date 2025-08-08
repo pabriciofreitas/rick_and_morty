@@ -1,4 +1,4 @@
-import 'package:rick_and_morty/data/model/personal_status_enum.dart';
+import 'package:rick_and_morty/domain/model/personal_status_enum.dart';
 
 class PersonaModel {
   final int id;

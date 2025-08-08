@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/core/app_color.dart';
+import 'package:rick_and_morty/ui/core/app_color.dart';
 import 'package:rick_and_morty/ui/shared/widgets/app_bar_widget.dart';
 import 'package:rick_and_morty/ui/shared/widgets/persona_widget.dart';
 import 'package:rick_and_morty/ui/shared/widgets/title_widget.dart';
 
-import 'package:rick_and_morty/view_model/persona_view_model.dart';
+import 'package:rick_and_morty/ui/shared/view_model/persona_view_model.dart';
 
 class PersonaDetailsScreen extends StatefulWidget {
   final PersonaViewModel personaViewModel;

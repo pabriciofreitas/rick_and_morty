@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/core/app_color.dart';
+import 'package:rick_and_morty/ui/core/app_color.dart';
 
 class AppBarWidget extends StatelessWidget {
   final bool showBackButton;
