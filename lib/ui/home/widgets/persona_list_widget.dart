@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rick_and_morty/core/app_color.dart';
 import 'package:rick_and_morty/data/services/persona_service.dart';
 import 'package:rick_and_morty/infra/api_service.dart';
-import 'package:rick_and_morty/ui/home/widgets/persona_widget.dart';
+import 'package:rick_and_morty/ui/shared/widgets/persona_widget.dart';
 import 'package:rick_and_morty/ui/persona_details/persona_details_screen.dart';
 import 'package:rick_and_morty/view_model/persona_view_model.dart';
 
