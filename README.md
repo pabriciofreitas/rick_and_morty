@@ -17,46 +17,46 @@ ChangeNotifier
 ## Arquitetura do Projeto 
 MVVM 
 
-lib/
-│
-├── core/
-│   ├── app_color.dart
-│   └── app_print.dart
-│
-├── data/
-│   ├── model/
-│   │    ├── persona_model.dart
-│   │    ├── persona_response_model.dart
-│   │    └── personal_status_enum.dart
-│   │
-│   ├── repositories/
-│   │    └── persona_repository.dart
-│   │
-│   └── services/
-│        └── persona_service.dart
-│
-├── infra/
-│    └── api_service.dart
-│
-├── ui/
-│   ├── home/
-│   │    ├── widgets/
-│   │    │     └── persona_list_widget.dart
-│   │    └── home_screen.dart
-│   │
-│   ├── persona_details/
-│   │    └── persona_details_screen.dart
-│   │
-│   └── shared/
-│        └── widgets/
-│              ├── app_bar_widget.dart
-│              ├── persona_widget.dart
-│              └── title_widget.dart
-│
-├── view_model/
-│    ├── persona_view_model.dart
-│
-└── main.dart
+lib/<br>
+├── core/<br>
+│   ├── app_color.dart<br>
+│   └── app_print.dart<br>
+│<br>
+├── data/<br>
+│   ├── model/<br>
+│   │   ├── persona_model.dart<br>
+│   │   ├── persona_response_model.dart<br>
+│   │   └── personal_status_enum.dart<br>
+│   │<br>
+│   ├── repositories/<br>
+│   │   └── persona_repository.dart<br>
+│   │<br>
+│   └── services/<br>
+│       └── persona_service.dart<br>
+│<br>
+├── infra/<br>
+│   └── api_service.dart<br>
+│<br>
+├── ui/<br>
+│   ├── home/<br>
+│   │   ├── widgets/<br>
+│   │   │   └── persona_list_widget.dart<br>
+│   │   └── home_screen.dart<br>
+│   │<br>
+│   ├── persona_details/<br>
+│   │   └── persona_details_screen.dart<br>
+│   │<br>
+│   └── shared/<br>
+│       └── widgets/<br>
+│           ├── app_bar_widget.dart<br>
+│           ├── persona_widget.dart<br>
+│           └── title_widget.dart<br>
+│<br>
+├── view_model/<br>
+│   └── persona_view_model.dart<br>
+│<br>
+└── main.dart<br>
+
 
 ## Descrição
 
