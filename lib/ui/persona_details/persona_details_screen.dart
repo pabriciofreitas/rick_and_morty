@@ -38,7 +38,7 @@ class _PersonaDetailsScreenState extends State<PersonaDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.transparent,
+      color: Colors.white,
       child: SafeArea(
         child: Scaffold(
           backgroundColor: AppColor.white,
