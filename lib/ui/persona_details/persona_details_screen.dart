@@ -38,42 +38,48 @@ class _PersonaDetailsScreenState extends State<PersonaDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColor.white,
+      color: Colors.transparent,
       child: SafeArea(
         child: Scaffold(
-          backgroundColor: AppColor.background,
+          backgroundColor: AppColor.white,
           body: SingleChildScrollView(
             child: ListenableBuilder(
               listenable: widget.personaViewModel,
               builder: (context, _) {
-                return Column(
-                  children: [
-                    AppBarWidget(showBackButton: true),
-                    TitleWidget(),
-                    widget.personaViewModel.isLoading
-                        ? Padding(
-                            padding: const EdgeInsets.all(32),
-                            child: CircularProgressIndicator(
-                              color: AppColor.white,
+                return Container(
+                  color: AppColor.background,
+                  constraints: BoxConstraints(
+                    minHeight: MediaQuery.of(context).size.height,
+                  ),
+                  child: Column(
+                    children: [
+                      AppBarWidget(showBackButton: true),
+                      TitleWidget(),
+                      widget.personaViewModel.isLoading
+                          ? Padding(
+                              padding: const EdgeInsets.all(32),
+                              child: CircularProgressIndicator(
+                                color: AppColor.white,
+                              ),
+                            )
+                          : widget.personaViewModel.actualPersona == null
+                          ? SizedBox.shrink()
+                          : Container(
+                              margin: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 32,
+                              ),
+                              constraints: BoxConstraints(
+                                maxHeight: 500,
+                                maxWidth: 450,
+                              ),
+                              child: PersonaWidget(
+                                persona: widget.personaViewModel.actualPersona!,
+                                showDetails: true,
+                              ),
                             ),
-                          )
-                        : widget.personaViewModel.actualPersona == null
-                        ? SizedBox.shrink()
-                        : Container(
-                            margin: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 32,
-                            ),
-                            constraints: BoxConstraints(
-                              maxHeight: 500,
-                              maxWidth: 450,
-                            ),
-                            child: PersonaWidget(
-                              persona: widget.personaViewModel.actualPersona!,
-                              showDetails: true,
-                            ),
-                          ),
-                  ],
+                    ],
+                  ),
                 );
               },
             ),

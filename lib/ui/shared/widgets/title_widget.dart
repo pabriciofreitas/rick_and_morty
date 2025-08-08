@@ -8,6 +8,9 @@ class TitleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColor.white,
+      constraints: BoxConstraints(
+        minHeight: MediaQuery.of(context).size.height * 0.3,
+      ),
       child: Center(
         child: const Text(
           'Rick and Morty',

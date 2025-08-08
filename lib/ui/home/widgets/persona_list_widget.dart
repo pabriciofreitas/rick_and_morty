@@ -58,7 +58,9 @@ class _PersonaListWidgetState extends State<PersonaListWidget> {
       listenable: personaViewModel,
       builder: (context, _) => Container(
         color: AppColor.background,
-        constraints: BoxConstraints(minHeight: 800),
+        constraints: BoxConstraints(
+          minHeight: MediaQuery.of(context).size.height,
+        ),
         child: Column(
           children: [
             GridView.builder(
